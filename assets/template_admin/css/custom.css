@@ -1,0 +1,26 @@
+.kt-menu__item--active a {
+    background-color: #5D78FC !important;
+}
+
+.kt-menu__item--active a i {
+    color: white !important;
+}
+
+.help-block.error {
+    color: #ff6374 !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.custom-file {
+    width: 300px;
+}
+
+.btn-floating {
+    position: fixed;
+    left: 50%;
+    z-index: 100000;
+    bottom: 30px
+}

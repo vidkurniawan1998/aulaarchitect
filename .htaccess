@@ -1,0 +1,16 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^sehatkerjaku\.com$
+RewriteRule (.*) https://www.sehatkerjaku.com/$1 [R=301,L]
+
+ErrorDocument 404 /ci_komodo/komodo
+
+RewriteCond %{REQUEST_URI} ^/system.*
+RewriteRule ^(.*)$ index.php?/komodo?/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?/komodo?/$1 [L]
+
+<IfModule mod_security.c>
+    SecFilterScanPOST Off
+</IfModule>

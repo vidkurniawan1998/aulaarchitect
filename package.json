@@ -1,0 +1,34 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "redesign website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch assets/template_front/scss/style.scss -o assets/template_front/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/red-system/e-commerce/enterprise.git "
+  },
+  "keywords": [
+    "asuransi",
+    "allianz"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-qunit": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "matchdep": "*"
+  },
+  "author": "Mahendra Wardana",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mahendrawardana/asuransi-allianz#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
